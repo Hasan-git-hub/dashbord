@@ -1,0 +1,145 @@
+body{
+    font-family:Arial, sans-serif;
+    background:#f3f6fb;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+@keyframes box {
+    0% {
+        transform: scaleY(0);
+        transform: scaleX(0);
+    } 50% {
+        transform: scaleY(1);
+        transform: scaleX(1.15);
+    } 100% {
+        transform: scale(1);
+    }
+}
+.box{
+    width:420px;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(70, 70, 70, 0.06);
+    animation: box 3s forwards;
+}
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    width:420px;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+.row {
+    margin-bottom:12px;
+    display:flex;
+    flex-direction:column
+}
+label {
+    font-weight:700;
+    margin-bottom:6px
+}
+input,select{
+    padding:10px;
+    border:1px solid #d0d7e0;
+    border-radius:8px;
+    transition: all 1s;
+    background-color: transparent;
+}
+input:focus {
+    transform: scale(1.05);
+}
+.gender {
+    transition: all 2s;
+}
+.gender:active {
+    transition: all 2s;
+
+}
+.btns {
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+button {
+    padding:10px 12px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold
+}
+.save {
+    background:#4da8ff;
+    color:#fff;
+    transition: all 0.3s;
+} .save:hover {
+    background: #4da9ff7c;
+    color: #666;
+}
+.clear{
+    background:#e6eef8;
+    transition: all 0.3s;
+} .clear:hover {
+    background: #666;
+    color: white;
+}
+.msg{
+    color:#b00020;
+    font-size:14px;
+    margin-top:10px;
+    display:none;
+}
+.avatar{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#ffd27f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    margin-bottom:12px;
+}
+.small {
+    color:#666;
+    font-size:18px
+}
+.span-text {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+    font-size: 18px;
+}
+.edit {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+} .editbtn {
+    background-color: transparent;
+} .editicon {
+    color: #666;
+    width: 30px;
+    height: 30px;
+} .editurl {
+    display: none;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    border: 1px solid black;
+} .editurl::placeholder {
+    color: #666;
+    font-size: 16px;
+} .h2 {
+    display: flex; 
+    justify-content: space-between;
+} .night {
+    width: 30px;
+    height: 30px;
+} .light {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
